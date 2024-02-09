@@ -1,0 +1,23 @@
+{
+  "name": "tailwind-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "serve": "serve .",
+    "build": "tailwindcss -i ./css/main.css -o ./build/main.css",
+    "watch": "npm run build -- --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
